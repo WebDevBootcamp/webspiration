@@ -1,0 +1,38 @@
+#iframe {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #7a8b8b;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto; */
+}
+
+.carousel-caption {
+    padding-bottom: 0px;
+    align-content: right;
+    left: 94.5%;
+    bottom: 5px;
+}
+
+.carousel-caption .btn {
+    text-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.carousel-caption .btn .glyphicon:hover {
+    color:mediumblue;
+}
+
+
+.glyphicon  {
+    font-size: 50px;
+    color: white;
+}
+
+.glyphicon:hover  {
+    color: mediumblue;
+}
+

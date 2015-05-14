@@ -1,3 +1,18 @@
+h1 {
+font-family: Dagerotypos;
+font-size: 100pt;
+}
+
+.carousel-control {
+    width: 5%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
 #iframe {
     display: inline-block;
     height: 400px;

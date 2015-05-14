@@ -37,3 +37,12 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+.brand-font {
+    font-family: 'Dagerotypos';  
+    font-size: 45px;
+}
+
+.footer {
+    text-align: center;
+}

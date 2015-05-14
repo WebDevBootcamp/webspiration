@@ -1,53 +1,105 @@
-h1 {
-font-family: Dagerotypos;
-font-size: 100pt;
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.carousel-control {
-    width: 5%;
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: none;
 }
+
+h1 {
+    font-family: Dagerotypos;
+    font-size: 100pt;
+}
+
+.about-section {
+    padding-top: 0px;
+}
+
+.blurb {
+    margin: 25px;
+}
+
+.btn-default {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.btn-default:hover {
+    color: back;
+    background-color: white;
+    border-color: gray;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 20px 40px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
 #iframe {
     display: inline-block;
-    height: 400px;
-    width: 400px;
+    max-height: 100%;
+    width: cover;
     margin: 0;
     padding: 0;
-    border: 1px solid #7a8b8b;
-    -webkit-overflow-scrolling: touch;
-    overflow: auto; */
+    border: 0;
+    overflow: none;
 }
 
-.carousel-caption {
-    padding-bottom: 0px;
-    align-content: right;
-    left: 94.5%;
-    bottom: 5px;
+.carousel-control.left {
+    background-image: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    left: 0px;
+    right: 0px;
+
 }
 
-.carousel-caption .btn {
-    text-shadow: none;
-    background-color: transparent;
-    border-color: transparent;
+.carousel-control.right {
+    background-image: none;
+    margin-right: 0px;
+    padding-right: 0px;
+    left: 0px;
+    right: 0x;
 }
 
-.carousel-caption .btn .glyphicon:hover {
-    color:mediumblue;
+.carousel-control:hover {
+    color: darkturquoise;
 }
 
-
-.glyphicon  {
+.carousel-control.left .glyphicon {
     font-size: 50px;
-    color: white;
 }
 
-.glyphicon:hover  {
-    color: mediumblue;
+.carousel-control.right .glyphicon {
+    font-size: 50px;
 }
+
+
+
 

@@ -41,8 +41,16 @@ code {
 .brand-font {
     font-family: 'Dagerotypos';  
     font-size: 45px;
+    color: black;
 }
 
 .footer {
     text-align: center;
+}
+h1 {
+ text-align: center;    
+}
+
+h3 {
+ text-align: center;   
 }

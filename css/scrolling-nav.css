@@ -36,8 +36,8 @@ html {
 }
 
 .about-section {
-    height: 100%;
-    vertical-align: top;
+    height: 75%;
+    vertical-align: middle;
     padding-top: 150px;
     text-align: center;
     background: #fff;

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Dagerotypos';
+    src:url('Dagerotypos.ttf.woff') format('woff'),
+        url('Dagerotypos.ttf.svg#Dagerotypos') format('svg'),
+        url('Dagerotypos.ttf.eot'),
+        url('Dagerotypos.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

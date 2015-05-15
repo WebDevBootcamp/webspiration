@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet"href="css/sticky-footer-navbar.css">
+    <!-- <link rel="stylesheet"href="css/sticky-footer-navbar.css"> -->
     <link rel="stylesheet" href="css/scrolling-nav.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/carouselV2.css">
@@ -42,8 +42,8 @@
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
                 <!--<li ><a href="#">Home</a></li>-->
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
         </div>
 </nav>
 
@@ -155,11 +155,30 @@
             <div class="col-lg-12">
                 <h1>Services Section</h1>
             </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <form id="searchForm">
+                  <div class="form-group">
+                    <label for="nytLabel">Get Webspired and Enter a Keyword to Search</label>
+                    <input type="text" class="form-control" id="nytInput" placeholder="enter a keyword">
+                  </div>
+                    <button type="submit" id="go" class="btn btn-default">Submit</button>
+          <!--           <a href="#" id="go" class="btn btn-defaut" role="button">Submit</a>
+           -->     </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="container nytImageContainer">
+            <div class="row articleImage">
+
+            </div>
+          </div>
         </div>
     </div>
 </section>
 
-<!-- Contact Section INPUT CATHY'S CONTACT US FORM HERE? -->
+<!-- Contact Section INPUT CATHY'S CONTACT US FORM HERE?
 <section id="contact" class="contact-section">
     <div class="container">
         <div class="row">
@@ -168,9 +187,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<footer class="footer">
+<footer class="footer" style="text-align: center">
     <div class="container">
         <p class="text-muted"><span style="color: #FF5A14">&lt;</span> <span style="font-family: 'Dagerotypos'; font-size:30px; color:black">Webspiration</span><span style="color: #FF5A14">&gt;</span> 2015, all rights reserved. have you seen a webspiring design? <a herf="#">contact us</a></p>
     </div>
@@ -185,6 +204,7 @@
 <!-- Scrolling Nav JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrolling-nav.js"></script>
+<script src="js/flip.js"></script>
 
 </body>
 

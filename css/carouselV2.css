@@ -123,8 +123,12 @@ h1 {
     margin-left: -126px;
 }
 
+.brand-font {
+  font-family: Dagerotypos;
+  font-size: 45px;
+  color: black;
+}
 
-
-
-
-
+.services-section {
+  overflow-y: scroll;
+}

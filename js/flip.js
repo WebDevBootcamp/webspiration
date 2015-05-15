@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
 
-  $("#go").click(function(){
+  $("#searchForm").on('submit', function(e){
+      e.preventDefault();
+      console.log('submitted');
       getMostViewed();
       $('.nytImageContainer').empty();
   });

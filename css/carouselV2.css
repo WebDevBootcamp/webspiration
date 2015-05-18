@@ -132,3 +132,60 @@ h1 {
 .services-section {
   overflow-y: scroll;
 }
+
+
+/* JULIA'S ADDITIONS
+-------------------------------------------------- */
+
+/* Footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+   /* Set the fixed height of the footer here */ 
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom CSS
+-------------------------------------------------- */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+.brand-font {
+    font-family: 'Dagerotypos';  
+    font-size: 45px;
+    color: black;
+}
+
+a:hover {
+    color: #FF5A14;   
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FF5A14;   
+}

@@ -35,15 +35,17 @@ function getMostViewed() {
     articles.forEach(function(e, i){
       var headline = e.headline.print_headline;
       console.log (headline);
+      console.log (i);
       if( headline !== undefined ) {
-        $('.nytImageContainer').append("<div class='row headline'><h4>" + headline + "</h4>");
+        $('.nytImageContainer').append("<div class='row headline' id='headline"+ i +"'><h4>" + headline + "</h4>");
       } else {
-        $('.nytImageContainer').append("<div class='row headline'><h4 style='color: #DDD;'>'no title provided by nyt'</h4>");
+        $('.nytImageContainer').append("<div class='row headline' id='headline"+ i +"'><h4 style='color: #DDD;'>'no title provided by nyt'</h4>");
       }
+
 
         var website = e.web_url;
         console.log (website);
-        $('.nytImageContainer').append("<div class='row headline'><p><a href='" + website + "'>" + website + "</a></p>");
+        $('.nytImageContainer').append("<div class='row headline' id='website"+ i + "'><p><a href='" + website + "'>" + website + "</a></p>");
 
       var multimedia = e.multimedia[1];
       // console.log(multimedia);
@@ -51,7 +53,9 @@ function getMostViewed() {
       if (!jQuery.isEmptyObject(multimedia)) {
             var imgUrl = multimedia.url
 
-            $('.nytImageContainer').append("<div class='col-xs-12 nytImgDiv'><img src='http://www.nytimes.com/" + imgUrl + "' style='border-radius: 10px; margin: 20px;'/></div>");
+            $('.nytImageContainer').append("<div class='col-xs-12 nytImgDiv' id='image"+ i +"'><img src='http://www.nytimes.com/" + imgUrl + "' style='border-radius: 10px; margin: 20px;'/></div>"
+            + "<form method='post' role='form'><div class='form-group'><input id='like'"
+            + " name='like' type='submit' value='like it' class='btn btn-primary'></div></form>");
 
         }
         // )}

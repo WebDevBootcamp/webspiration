@@ -16,6 +16,12 @@ h1 {
     font-size: 100pt;
 }
 
+h2 {
+    font-family: Dagerotypos;
+    font-size: 50pt;
+    text-align: center;
+}
+
 .about-section {
     padding-top: 0px;
 }
@@ -188,4 +194,104 @@ a:hover {
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #FF5A14;   
+}
+
+/* ABOUT PAGE
+-------------------------------------------------- */
+#carousel {
+    margin-top: 50px;
+}
+
+.profile {
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#profile {
+    text-align: center;
+}
+
+/*.flipped {*/
+    /*-webkit-transform: rotatex(-180deg);*/
+/*}*/
+
+#us {
+    text-align: center;
+
+}
+
+.card{
+
+    /* How pronounced should the 3D effects be */
+    perspective: 800px;
+    -webkit-perspective: 800px;
+
+    /*background: radial-gradient(#e0e0e0, #aaa);*/
+    width:300px;
+    height:300px;
+    margin:0;
+    border-radius:6px;
+    position:relative;
+    display:inline-block;
+}
+
+.front,
+.back{
+
+    /* Enable 3D transforms */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
+    /* We are using two separate divs for the front and back of the
+       phone. This will hide the divs when they are flipped, so that the
+       opposite side can be seen:  */
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    width:200px;
+    height:333px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-166px 0 0 -100px;
+
+    /* Animate the transitions */
+    transition:0.8s;
+
+}
+
+.back{
+
+    /* The back side is flipped 180 deg by default */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+
+    background-position:right center;
+}
+
+.card:hover .front{
+    /* When the container is hovered, flip the front side and hide it .. */
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+}
+
+.card:hover .back{
+    /* .. at the same time flip the back side into visibility */
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+}
+
+#aboutHeader {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.front img {
+    border-radius: 10px;
+}
+
+#map {
+ align-content: center;   
 }

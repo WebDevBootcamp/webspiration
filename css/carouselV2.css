@@ -16,6 +16,12 @@ h1 {
     font-size: 100pt;
 }
 
+h2 {
+    font-family: Dagerotypos;
+    font-size: 50pt;
+    text-align: center;
+}
+
 .about-section {
     padding-top: 0px;
 }
@@ -196,10 +202,6 @@ a:hover {
     margin-top: 50px;
 }
 
-.footer {
-    text-align: center;
-}
-
 .profile {
     margin: 20px;
     border-radius: 5px;
@@ -288,4 +290,8 @@ a:hover {
 
 .front img {
     border-radius: 10px;
+}
+
+#map {
+ align-content: center;   
 }

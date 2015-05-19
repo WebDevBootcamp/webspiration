@@ -303,10 +303,17 @@ a:hover {
 }
 
 #map-container {
-    display: inline-block;
     text-align: center;
 }
 
 #map {
     display:inline-block;
+}
+
+#gmap_canvas {
+    border-radius:10px;
+}
+
+#spacer {
+    height: 100px;
 }

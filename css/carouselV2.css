@@ -291,3 +291,12 @@ a:hover {
 .front img {
     border-radius: 10px;
 }
+
+#map-container {
+    display: inline-block;
+    text-align: center;
+}
+
+#map {
+    display:inline-block;
+}

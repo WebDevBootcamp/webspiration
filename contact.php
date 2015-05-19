@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Webspiration</title>
+    <title>Learn About Us</title>
 
-    <!-- Bootstrap core CSS -->
-<!--    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- ======== CSS STYLESHEETS ======= -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrolling-nav.css">
+    <link rel="stylesheet" href="css/carouselV2.css">
+<!--    <link href="css/main.css" rel="stylesheet">-->
 
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
 
-  </head>
+    <!-- ======== FONTS ======= -->
+    <link rel="stylesheet" href="fonts/webfonts_Dagerotypos/Dagerotypos.css" charset="utf-8" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <body>
+</head>
+
+<body>
+
 
 <?php
     // Using the ini_set()
@@ -81,40 +82,32 @@
 
 ?>
 
-<!-- Fixed navbar -->
+<!-- ======== FIXED NAVBAR ======= -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Webspiration</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Featured Websites<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
+    <div class="container">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- NAVBAR BRAND LOGO -->
+            <a class="navbar-brand" href="carouselV2.html"><span style="color: #FF5A14">&lt;</span><span class="brand-font"> Webspiration </span><span style="color: #FF5A14">&gt;</span> </a>
+        </div>
+
+        <!-- NAVBAR MENU ITEMS -->
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+              <li><a href="carouselV2.html"><i class="fa fa-home"> Home</i></a></li>
+              <li ><a href="carouselV2.html#articles"><i class="fa fa-newspaper-o"> Articles</i></a></li>
+              <li><a href="about.html"><i class="fa fa-users"> About</i></a></li>
+        </div>
 </nav>
 
+<!--Start Content-->
 <div class="container">
 <div class='row'>
     <div class='col-med-12' id='skills'>
@@ -145,7 +138,7 @@
             <?php echo "<p class='text-danger'>$errHuman</p>";?>
         </div>
         <div class="form-group">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
         </div>
 <!--        <div class="form-group">
             <label class="checkbox-inline"><input type="checkbox" name="carbonCopy" value="Yes">Send Carbon Copy?</label>
@@ -159,6 +152,7 @@
 </div>
 </div>
 </div>
+<div id="spacer"></div>
     <footer class="footer">
       <div class="container">
         <p class="text-muted">all rights reserved. 2015. have you seen a webspiring design? <a href="contact.php">contact us</a>!</p>

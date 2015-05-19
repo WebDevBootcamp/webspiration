@@ -192,8 +192,18 @@ a:hover {
     color: #FF5A14;   
 }
 
+
 .navbar-default .navbar-nav > li > a:hover {
     color: #FF5A14;   
+}
+
+#articles:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#articles {
+    color: black;   
 }
 
 /* ABOUT PAGE

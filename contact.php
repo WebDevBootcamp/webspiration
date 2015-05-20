@@ -102,10 +102,12 @@
         <div id="navbar" class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
               <li><a href="carouselV2.html"><i class="fa fa-home"> Home</i></a></li>
-              <li ><a href="carouselV2.html#articles"><i class="fa fa-newspaper-o"> Articles</i></a></li>
+              <li ><a href="#articles"><i class="fa fa-newspaper-o"> Articles</i></a></li>
               <li><a href="about.html"><i class="fa fa-users"> About</i></a></li>
+            <li><a href="contact.php"><i class="fa fa-envelope"> Contact</i></a></li>
         </div>
 </nav>
+
 
 <!--Start Content-->
 <div class="container">
@@ -153,10 +155,13 @@
 </div>
 </div>
 <div id="spacer"></div>
+   
+    <!-- ======= FOOTER ======= -->
+    
     <footer class="footer">
-      <div class="container">
-        <p class="text-muted">all rights reserved. 2015. have you seen a webspiring design? <a href="contact.php">contact us</a>!</p>
-      </div>
+        <div class="container">
+          <p class="text-muted"><span style="color: #FF5A14">&lt;</span> <span style="font-family: 'Dagerotypos'; font-size:30px; color:black"> Webspiration </span><span style="color: #FF5A14">&gt;</span> 2015, all rights reserved. have you seen a webspiring design? <a href="contact.php"><i class="fa fa-envelope-o"> contact us </i></a></p>
+        </div>   
     </footer>
 
 

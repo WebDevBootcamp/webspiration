@@ -8,29 +8,29 @@ $(document).ready(function() {
     $('.nytImageContainer').empty();
   });
 
-  var btnInfo = getButtonInfo();
+    getButtonInfo();
 
-  // resetBtn();
-
-
-
-  // var likeBtnInfo = getButtonInfo();
-  // console.log(likeBtnInfo);
-  //
-  // var test = setTimeout(test(2), 10000);
-  // console.log(test);
+    resetBtn();
 
 });
 
 
 function getMostViewed() {
+
+  var theKey = globalCTX.api_keys.nytAPI;
   var keyword = $('#nytInput').val().split(' ').join('+');
 
   console.log(keyword);
 
-  var url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?callback=svc_search_v2_articlesearch&q="
-  + encodeURIComponent(keyword)
-  + "&sort=newest&page=1&api-key=18a905653b4f0581867fa5199b5156e0%3A5%3A72064799";
+
+  // var url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?callback=svc_search_v2_articlesearch&q="
+  // + encodeURIComponent(keyword)
+  // + "&sort=newest&page=1&api-key=18a905653b4f0581867fa5199b5156e0%3A5%3A72064799"; //search any keyword
+
+
+  var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?callback=svc_search_v2_articlesearch&fq=headline:("'
+  + keyword +
+  '")&sort=newest&page=1&api-key='+ theKey; //search headline keyword
 
   console.log(url);
 
@@ -92,9 +92,10 @@ function getButtonInfo() {
 
     console.log(buttonInfo);
 
+    var theKey = globalCTX.api_keys.nytAPI;
     var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?callback=svc_search_v2_articlesearch&fq=_id:("'
     + encodeURIComponent(buttonInfo)
-    + '")&api-key=18a905653b4f0581867fa5199b5156e0%3A5%3A72064799';
+    + '")&api-key=' + theKey;
 
     console.log(url);
 
@@ -131,11 +132,11 @@ function getButtonInfo() {
   // jsan.stringify
 };
 
-//
-// function resetBtn() {
-//   $('#reset').on('click' function(e){
-//     e.preventDefault;
-//     e.stopImmediatePropagation;
-//     $('.savedImagesDiv').empty();
-//   })
-// };
+
+function resetBtn() {
+  $('#reset').on('click', function(e){
+    e.preventDefault;
+    e.stopImmediatePropagation;
+    $('.savedImagesDiv').empty();
+  })
+};

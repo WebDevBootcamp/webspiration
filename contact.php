@@ -153,10 +153,13 @@
 </div>
 </div>
 <div id="spacer"></div>
+   
+    <!-- ======= FOOTER ======= -->
+    
     <footer class="footer">
-      <div class="container">
-        <p class="text-muted">all rights reserved. 2015. have you seen a webspiring design? <a href="contact.php">contact us</a>!</p>
-      </div>
+        <div class="container">
+          <p class="text-muted"><span style="color: #FF5A14">&lt;</span> <span style="font-family: 'Dagerotypos'; font-size:30px; color:black"> Webspiration </span><span style="color: #FF5A14">&gt;</span> 2015, all rights reserved. have you seen a webspiring design? <a href="contact.php"><i class="fa fa-envelope-o"> contact us </i></a></p>
+        </div>   
     </footer>
 
 

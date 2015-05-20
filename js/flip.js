@@ -8,7 +8,17 @@ $(document).ready(function() {
     $('.nytImageContainer').empty();
   });
 
-  getButtonInfo();
+  var btnInfo = getButtonInfo();
+
+  // resetBtn();
+
+
+
+  // var likeBtnInfo = getButtonInfo();
+  // console.log(likeBtnInfo);
+  //
+  // var test = setTimeout(test(2), 10000);
+  // console.log(test);
 
 });
 
@@ -72,14 +82,60 @@ function getMostViewed() {
 
 };
 
+
+
 function getButtonInfo() {
   $('.nytImageContainer').on('click', '.likeForm input', function(e){
     e.preventDefault();
     e.stopImmediatePropagation();
-    console.log($(this).data('id'));
+    var buttonInfo = $(this).data('id');
+
+    console.log(buttonInfo);
+
+    var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?callback=svc_search_v2_articlesearch&fq=_id:("'
+    + encodeURIComponent(buttonInfo)
+    + '")&api-key=18a905653b4f0581867fa5199b5156e0%3A5%3A72064799';
+
+    console.log(url);
 
 
+    $.ajax({
+      url: url,
+      context: document.body,
+      method: "GET"
+    }).done(function(data){
+
+      console.log(data);
+      var oneWebUrl = data.response.docs[0].web_url;
+      var oneArticleImage = data.response.docs[0].multimedia[1].url;
+
+      console.log(oneWebUrl);
+      console.log(oneArticleImage);
+
+      // $('.savedImagesDiv').append(
+      //   "<div class='col-xs-12 saveImgDiv'><a href='" + oneWebUrl +
+      //   "'><img src='http://www.nytimes.com/"
+      //   + oneArticleImage + "' style='border-radius: 10px; margin: 20px; height: 75px; width: auto;'/></a></div>")
+
+      $('.savedImagesDiv').append(
+        "<a href='" + oneWebUrl +
+        "'><img src='http://www.nytimes.com/"
+        + oneArticleImage + "' style='border-radius: 10px; margin: 20px; height: 75px; width: auto;'/></a></div>")
+
+
+    });
 
 
   });
-}
+
+  // jsan.stringify
+};
+
+//
+// function resetBtn() {
+//   $('#reset').on('click' function(e){
+//     e.preventDefault;
+//     e.stopImmediatePropagation;
+//     $('.savedImagesDiv').empty();
+//   })
+// };

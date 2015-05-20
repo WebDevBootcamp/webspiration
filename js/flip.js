@@ -58,7 +58,8 @@ function getMostViewed() {
       if (!jQuery.isEmptyObject(multimedia)) {
         var imgUrl = multimedia.url
 
-        $('.nytImageContainer').append("<div class='col-xs-12 nytImgDiv' id='image"+ i +"'><img src='http://www.nytimes.com/" + imgUrl + "' style='border-radius: 10px; margin: 20px;'/></div>"
+        $('.nytImageContainer').append(
+          "<div class='col-xs-12 nytImgDiv' id='image"+ i +"'><img src='http://www.nytimes.com/" + imgUrl + "' style='border-radius: 10px; margin: 20px;'/></div>"
         + "<form class='likeForm' role='form'><div class='form-group'>"
         + "<input name='like' type='submit' value='like it' class='btn btn-default' style='margin: 5px;' data-id='" + itemID + "'></div></form>");
 
@@ -72,11 +73,13 @@ function getMostViewed() {
 };
 
 function getButtonInfo() {
-  $('.nytImageContainer').on('submit', '.likeForm', function(e){
+  $('.nytImageContainer').on('click', '.likeForm input', function(e){
     e.preventDefault();
     e.stopImmediatePropagation();
-    console.log('submitted like');
-    var likeDataID = $(this).attr("data-id");
-    console.log(likeDataID);
+    console.log($(this).data('id'));
+
+
+
+
   });
 }
